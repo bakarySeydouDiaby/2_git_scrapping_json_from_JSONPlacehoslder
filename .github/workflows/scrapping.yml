@@ -23,4 +23,3 @@ jobs:
         timestamp=$(date -u)
         git commit -m "users data from JSONPlacehoder online rest api : ${timestamp}" || exit 0
         git push
-© 2021 GitHub, Inc.
