@@ -4,11 +4,11 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron:  '10,20,30,40,50 * * * *'
+    - cron:  '6,26,46 * * * *'
 
 jobs:
   scheduled:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
@@ -17,8 +17,8 @@ jobs:
         curl https://jsonplaceholder.typicode.com/users | jq . > users.json
     - name: Commit and push if it changed
       run: |-
-        #git config user.name "Bakary"
-        #git config user.email "bakaryseydou@gmail.com"
+        git config user.name "Bakary"
+        git config user.email "bakaryseydou@gmail.com"
         git add -A
         timestamp=$(date -u)
         git commit -m "users data from JSONPlacehoder online rest api : ${timestamp}" || exit 0
