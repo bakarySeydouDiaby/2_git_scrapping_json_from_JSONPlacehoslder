@@ -1,4 +1,13 @@
-# 2_git_scrapping_json_from_JSONPlacehoslder
+## prerequisites
+- create github repository
+- create local folder
+- copy in the folder the 2 sh scripts
+    - first run git_initial_setup.sh : config git, add file,commitit, add remote, push to remote
+    - in every modification of files, run automate_push.sh to push it to remote
+
+Now we have our remote repos available
+
+
 
 ## Background on this project: 
 
