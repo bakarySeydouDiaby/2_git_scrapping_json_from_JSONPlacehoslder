@@ -18,9 +18,10 @@ Now we have our remote repos available
 We need to grap users json file from JSONPlaceholder REST API with git scrapping tool made by @Simon Willison
 
 We create yaml file in which we define cron job to :
-
 - fetch the data from given url with curl command
 - commit and push it
+
+My custom yml file is in : 2_git_scrapping_json_from_JSONPlacehoslder/.github/workflows/scrapping.yml
 
 Afterward, use github actions button to schedule the job
 
